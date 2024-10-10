@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yijin Wang</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Yijin Wang</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:1313/date/title/</link>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/date/title/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prototyping test</title>
+      <link>http://localhost:1313/date/title/</link>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/date/title/</guid>
+      <description>&lt;p&gt;Hiiiii. this is my prototyping placeholder. Stay tuned for more hands-on projects coming in!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hello From Yijin!</title>
+      <link>http://localhost:1313/2024/09/24/test/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/09/24/test/</guid>
+      <description>&lt;p&gt;Helloooo!!!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;&#xA;&lt;p&gt;Hi, I&amp;rsquo;m Yijin Wang. I design, build and operate machine learning systems that serve customers at scale. I also write and speak about DS, ML, NLP and LLMs.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m currently a Senior Data Scientist at Expedia where I focus on helping travleres have better travel experience.&lt;/p&gt;&#xA;&lt;p&gt;In my free time, I likes writing technical blog posts, coffee tasting, hiking, traveling and learning new languages.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/</guid>
+      <description>&lt;h2 id=&#34;go-语言学习笔记httpszhaohuabingcomlearning-golang&#34;&gt;&lt;a href=&#34;https://zhaohuabing.com/learning-golang&#34;&gt;Go 语言学习笔记&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;envoy-学习笔记httpszhaohuabingcomlearning-envoy&#34;&gt;&lt;a href=&#34;https://zhaohuabing.com/learning-envoy&#34;&gt;Envoy 学习笔记&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/search/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/search/placeholder/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Posts Archive</title>
+      <link>http://localhost:1313/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/archive/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

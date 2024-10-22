@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="Prototyping test" />
-    <meta property="og:title" content="Prototyping test" />
-    <meta property="twitter:title" content="Prototyping test" />
+    <meta name="title" content="AlexNet - Paper Summary" />
+    <meta property="og:title" content="AlexNet - Paper Summary" />
+    <meta property="twitter:title" content="AlexNet - Paper Summary" />
     
 
     
@@ -34,7 +34,7 @@
     <meta name="keyword"  content="yijinwang,YijinWang Blog, Web, Data Scientist, LLM, AI/ML">
     <link rel="shortcut icon" href="/img/favicon1.ico">
 
-    <title>Prototyping test | Yijin Wang</title>
+    <title>AlexNet - Paper Summary | Yijin Wang</title>
 
     <link rel="canonical" href="/date/title/">
 
@@ -105,14 +105,6 @@
                             <a href="/categories/llm/">llm</a>
                         </li>
                         
-                        <li>
-                            <a href="/categories/ml/">ml</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/categories/prototyping/">prototyping</a>
-                        </li>
-                        
                     
                     
 		    
@@ -174,25 +166,25 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/tag1" title="tag1">
-                            tag1
+                        <a class="tag" href="/tags/deep-learning" title="Deep Learning">
+                            Deep Learning
                         </a>
                         
-                        <a class="tag" href="/tags/tag2" title="tag2">
-                            tag2
+                        <a class="tag" href="/tags/neural-network" title="Neural Network">
+                            Neural Network
                         </a>
                         
                     </div>
-                    <h1>Prototyping test</h1>
+                    <h1>AlexNet - Paper Summary</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
                             
-                            Oct 04, 2024
+                            Oct 21, 2024
                             
                             
                             
-                                 · 0 min
+                                 · 4 min
                             
                             
                             
@@ -218,27 +210,48 @@
                 post-container">
 
                 
-                <p>Hiiiii. this is my prototyping placeholder. Stay tuned for more hands-on projects coming in!</p>
+                <h2 id="problems">Problems</h2>
+<p>Convolutional Neural Networks (CNNs) have long been the preferred model for object recognition due to their robustness, ease of control, and relatively simple training process. Even when trained on millions of images, they handle overfitting well and perform nearly as well as standard feedforward neural networks of comparable size. However, CNNs are challenging to apply to high-resolution images. At the scale of ImageNet, an innovation was needed to optimize GPU usage, reduce training times, and enhance overall performance.</p>
+<h2 id="dataset">Dataset</h2>
+<p>ImageNet is a dataset containing over 15 million labeled high-resolution images spanning roughly 22,000 categories. The images were sourced from the web and labeled by human workers using Amazon’s Mechanical Turk.</p>
+<p>Since ImageNet contains images of varying resolutions, the authors down-sampled all images to a <strong>fixed resolution of 256×256 pixels</strong> to meet the requirements of their system. For rectangular images, they first resized the shorter side to 256 pixels, then cropped the central 256×256 patch. The only preprocessing applied was subtracting the mean pixel activity from the training set; the network was trained on the <strong>raw, centered RGB pixel values</strong>.</p>
+<h2 id="the-architecture">The Architecture</h2>
+<p>The architecture is composed of eight layers: five convolutional layers and three fully connected layers. However, what sets AlexNet apart isn&rsquo;t just its structure; it&rsquo;s the innovative features and techniques introduced, which represent new approaches to convolutional neural networks.</p>
+<h3 id="relu-nonlinearty">ReLu Nonlinearty</h3>
+<p>AlexNet uses Recitified Linear Units(ReLU) instead of the tanh or sigmoid neurons. The reason is deep convlutional nerual networks with ReLus train serveral times faster</p>
+<p>
+  <img src="/img/2024-10-21/ReLU.png" alt="">
+
+</p>
+<p><!-- raw HTML omitted --><em>ReLU: f(x) = max(0,x)</em><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --> A four-layer convolutional nerual network with ReLus(solid line) reaches a 25% training error rate on CIFAR-10 six times faster than an equivalent network with tanh neurons(dashed line). <!-- raw HTML omitted --></p>
+<h3 id="multipe-gpus">Multipe GPUs</h3>
+<p>Back then, GPUs had only 3GB of memory, making it hard to train on 1.2 million images. AlexNet solved this by splitting the model across two GPUs, enabling larger models and faster training times.</p>
+<h3 id="overlapping-pooling">Overlapping Pooling</h3>
+<p>In traditional CNNs, pooling layers summarize the outputs of neighboring neurons in the same kernel map without overlap. However, the authors propose using overlapping pooling, where a pixel appears multiple times. They noted that models trained with overlapping pooling were slightly more resistant to overfitting. This approach also reduced their top-1 and top-5 error rates by 0.4% and 0.3%, respectively.</p>
+<h2 id="overal-architecture">Overal Architecture</h2>
+<p>
+  <img src="/img/2024/10-21/AlexNet.png" alt="">
+
+</p>
+<h2 id="reduce-overfitting">Reduce Overfitting</h2>
+<h3 id="data-augmentation">Data Augmentation</h3>
+<p>The authors applied label-preserving transformations to artificially expand the dataset, generating image translations and horizontal reflections, which increased the training set size by 2048 times.</p>
+<p>They also conducted Principal Component Analysis (PCA) on the RGB pixel values to adjust channel intensities, resulting in a reduction of the top-1 error rate by more than 1%.</p>
+<h3 id="dropout">Dropout</h3>
+<p>The authors apply droput with a probability of 0.5 in the last two fully connected layers, which I believed is a heavy regularization.</p>
+<p>This means that every iteration uses a different sample of the model’s parameters, which forces each neuron to have more robust features that can be used with other random neurons. However, dropout also increases the training time needed for the model’s convergence.</p>
+<h2 id="insights">Insights</h2>
+<p>LeNet was the first successful application of neural network on MNIST, a quite small dataset from today&rsquo;s view. However, due to the limited computing power and storage of the computers at the time, neural network could not be applied to other bigger datasets and more complicated problems. SVM was the trend for about 20 years after LeNet. By 2012, the original bottleneck of neural network, computing power and storage, was improved a lot. This made AlexNet possible to emerge and eventually pulled people&rsquo;s attention back to neural network. Overall, AlexNet was able to compute the much larger dataset ImageNet (larger images, higher number of images and classes) and improved the accuracy substantially.</p>
+<p>Compare AlexNet to SVM: AlexNet doesn&rsquo;t need to hand craft features while SVM strongly relies on feature engineering. When we have complicated problems, AlexNet apparently provides a much easier and more accuracy approach.</p>
+<p>Compare AlexNet to LeNet: Both nets are CNN which considers spatial relationship. AlexNet can be considered as a bigger and deeper LeNet (therefore more accurate). The major improvements of AlexNet include dropout layer (reduce overfitting), using ReLu instead of sigmoid (reduce gradient vanishing), MaxPooling (make the model more robust to image shift; I feel it is a regularization as well), image augmentation (make the model more robust to the changes of image).</p>
+<p>Overall They correctly demonstrate that a large deep convolutional neural network is capable of achieving record-breaking results on a highly challenging dataset using purely supervised learning, without any pretraining. They showcase that things like ReLU and dropout are vital to training deep models. They note that the network’s performance degrades even if a single convolutional layer is removed, indicating that depth is highly important. They also didn’t use any unsupervised pre-training even though it might help a lot with the training process, as it simplified their experiments.</p>
+<h2 id="reference">Reference</h2>
+<p><a href="https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf">ImageNet Classification with Deep Convollutional Nerual Networks</a></p>
 
 
                 
 
-                
-                <hr>
-                <ul class="pager">
-                    
-                    <li class="previous">
-                        <a href="/2024/09/24/test/" data-toggle="tooltip" data-placement="top" title="Hello From Yijin!">&larr;
-                            Previous Post</a>
-                    </li>
-                    
-                    
-                    <li class="next">
-                        <a href="/date/title/" data-toggle="tooltip" data-placement="top" title="LLM">Next
-                            Post &rarr;</a>
-                    </li>
-                    
-                </ul>
                 
 
                 
@@ -256,7 +269,7 @@
     Artalk.init({
         el: '#Comments',
         pageKey: 'http:\/\/localhost:1313\/date\/title\/',
-        pageTitle: 'Prototyping test',
+        pageTitle: 'AlexNet - Paper Summary',
         server: 'https:\/\/xxx.xxx.com',
         site: 'xxx blog',
     })
@@ -297,15 +310,7 @@
                         
                         
                         
-                        <a href="/tags/tag1" title="tag1">
-                            tag1
-                        </a>
                         
-                        
-                        
-                        <a href="/tags/tag2" title="tag2">
-                            tag2
-                        </a>
                         
                         
                     </div>

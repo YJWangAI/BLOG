@@ -2,16 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/date/title/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-10-04T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/deep-learning/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/llm/</loc>
-    <lastmod>2024-10-04T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/date/title/</loc>
-    <lastmod>2024-10-04T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/neural-network/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nlp/</loc>
+    <lastmod>2024-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/nlp/</loc>
+    <lastmod>2024-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/date/title/</loc>
+    <lastmod>2024-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/date/title/</loc>
     <lastmod>2024-10-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/prototyping/</loc>
@@ -24,12 +48,6 @@
     <lastmod>2024-10-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/tag2/</loc>
-    <lastmod>2024-10-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-10-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2024-10-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/2024/09/24/test/</loc>

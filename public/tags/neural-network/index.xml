@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LLM on Yijin Wang</title>
-    <link>http://localhost:1313/categories/llm/</link>
-    <description>Recent content in LLM on Yijin Wang</description>
+    <title>Neural Network on Yijin Wang</title>
+    <link>http://localhost:1313/tags/neural-network/</link>
+    <description>Recent content in Neural Network on Yijin Wang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/llm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/neural-network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AlexNet - Paper Summary</title>
       <link>http://localhost:1313/date/title/</link>
       <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/date/title/</guid>
       <description>&lt;h2 id=&#34;problems&#34;&gt;Problems&lt;/h2&gt;&#xA;&lt;p&gt;Convolutional Neural Networks (CNNs) have long been the preferred model for object recognition due to their robustness, ease of control, and relatively simple training process. Even when trained on millions of images, they handle overfitting well and perform nearly as well as standard feedforward neural networks of comparable size. However, CNNs are challenging to apply to high-resolution images. At the scale of ImageNet, an innovation was needed to optimize GPU usage, reduce training times, and enhance overall performance.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>LLM</title>
-      <link>http://localhost:1313/date/title/</link>
-      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/date/title/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>

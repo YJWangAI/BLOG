@@ -13,7 +13,7 @@
       <link>http://localhost:1313/date/title/</link>
       <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/date/title/</guid>
-      <description></description>
+      <description>&lt;p&gt;hello from yijin&lt;/p&gt;&#xA;&lt;p&gt;nlp is a importnat skill&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

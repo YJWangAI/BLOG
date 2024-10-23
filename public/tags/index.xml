@@ -23,24 +23,31 @@
       <description></description>
     </item>
     <item>
-      <title>Nlp</title>
-      <link>http://localhost:1313/tags/nlp/</link>
-      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nlp/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Tag1</title>
       <link>http://localhost:1313/tags/tag1/</link>
-      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/tag1/</guid>
       <description></description>
     </item>
     <item>
       <title>Tag2</title>
       <link>http://localhost:1313/tags/tag2/</link>
-      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/tag2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:1313/tags/llm/</link>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prototyping</title>
+      <link>http://localhost:1313/tags/prototyping/</link>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/prototyping/</guid>
       <description></description>
     </item>
   </channel>

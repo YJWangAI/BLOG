@@ -20,7 +20,7 @@
       <link>http://localhost:1313/date/title/</link>
       <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/date/title/</guid>
-      <description></description>
+      <description>&lt;p&gt;Hello from LLM&lt;/p&gt;&#xA;&lt;p&gt;Learning will be hard&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

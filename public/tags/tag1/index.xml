@@ -6,28 +6,21 @@
     <description>Recent content in Tag1 on Yijin Wang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NLP Learning</title>
+      <link>http://localhost:1313/date/title/</link>
+      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/date/title/</guid>
+      <description>&lt;p&gt;hello from yijin&lt;/p&gt;&#xA;&lt;p&gt;nlp is a importnat skill&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LLM</title>
       <link>http://localhost:1313/date/title/</link>
       <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/date/title/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Prototyping test</title>
-      <link>http://localhost:1313/date/title/</link>
-      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/date/title/</guid>
-      <description>&lt;p&gt;Hiiiii. this is my prototyping placeholder. Stay tuned for more hands-on projects coming in!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hello From Yijin!</title>
-      <link>http://localhost:1313/2024/09/24/test/</link>
-      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/2024/09/24/test/</guid>
-      <description>&lt;p&gt;Helloooo!!!&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello from LLM&lt;/p&gt;&#xA;&lt;p&gt;Learning will be hard&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
